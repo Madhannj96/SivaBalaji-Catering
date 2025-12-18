@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sivabalaji Catering</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+    padding:15px;
+}
+
+/* ---------- CARD ---------- */
+.card{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    overflow:hidden;
+    transition:transform .3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+/* ---------- HEADER ---------- */
+.header{
+    background:linear-gradient(135deg,#d84315,#ff7043);
+    color:#fff;
+    text-align:center;
+    padding:28px 15px;
+}
+
+.header h1{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+.header p{
+    font-size:14px;
+    opacity:.9;
+    margin-top:6px;
+}
+
+/* ---------- MENU ---------- */
+.menu{
+    padding:25px;
+}
+
+.menu h2{
+    text-align:center;
+    color:#d84315;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px dashed #ddd;
+    font-size:16px;
+}
+
+.menu-item:last-child{
+    border-bottom:none;
+}
+
+.price{
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+/* ---------- FOOTER ---------- */
+.footer{
+    background:#f7f7f7;
+    text-align:center;
+    padding:18px;
+}
+
+.footer p{
+    font-size:15px;
+    margin:4px 0;
+}
+
+.phone{
+    font-size:20px;
+    font-weight:bold;
+    color:#d84315;
+}
+
+/* ---------- MOBILE (<=480px) ---------- */
+@media(max-width:480px){
+    .card{
+        max-width:100%;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+
+    .menu h2{
+        font-size:18px;
+    }
+
+    .menu-item{
+        font-size:14px;
+    }
+
+    .phone{
+        font-size:18px;
+    }
+}
+
+/* ---------- TABLET (481px – 768px) ---------- */
+@media(min-width:481px) and (max-width:768px){
+    .card{
+        max-width:480px;
+    }
+
+    .header h1{
+        font-size:26px;
+    }
+}
+
+/* ---------- LAPTOP (769px – 1200px) ---------- */
+@media(min-width:769px) and (max-width:1200px){
+    .card{
+        max-width:420px;
+    }
+}
+
+/* ---------- LARGE DESKTOP (1200px+) ---------- */
+@media(min-width:1201px){
+    body{
+        padding:40px;
+    }
+
+    .card{
+        max-width:450px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="header">
+        <h1>Sivabalaji Catering</h1>
+        <p>Pure Veg • Quality Taste • Best Service</p>
+    </div>
+
+    <div class="menu">
+        <h2>🍽️ Our Menu</h2>
+
+        <div class="menu-item">
+            <span>Tomato Rice</span>
+            <span class="price">₹ 1,800</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Curd Rice</span>
+            <span class="price">₹ 1,600</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Vegetable Rice</span>
+            <span class="price">₹ 2,200</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📞 Contact for Orders</p>
+        <p class="phone">90427 95797</p>
+    </div>
+</div>
+
+</body>
+</html>
 
